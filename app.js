@@ -5,7 +5,7 @@ var right = document.querySelector('.right');
 var bottom = document.querySelector('.bottom');
 
 window.onscroll = function() {
-  if (window.pageYOffset > 20) {
+  if (window.pageYOffset > 1 ) {
     slider.style.width = '100vw';
     hello.style.left = '75%';
     right.style.display = 'block';
