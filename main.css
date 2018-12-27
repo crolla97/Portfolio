@@ -146,7 +146,10 @@ h4 {
   width: 100%;
   background-image: url("images/intro-pic.jpg");
   background-size: cover;
+  background-position: center;
+  display: block;
   height: 30vh;
+  margin-bottom: 20px;
 }
 .intro-text {
   color: #E2E2E2;
@@ -214,7 +217,7 @@ section:first-child {
 .container {
   padding: 35px 40px 0 40px;
 }
-.numbers {
+#numbers {
   display: block;
   padding-bottom: 20px;
 }
@@ -359,10 +362,16 @@ footer {
     line-height: 180px;
   }
   h3 {
-    font-size: 4.5em;
+    font-size: 4em;
   }
   h4 {
-    font-size: 2em;
+    font-size: 1.8em;
+  }
+  section {
+    padding: 30px;
+  }
+  section:first-child {
+    padding: 0;
   }
   .gutters {
     margin-left: 0;
@@ -464,8 +473,6 @@ footer {
   .container {
     padding: 10px;
   }
-
-
   .icon-contact {
     font-size: 4em;
   }
@@ -474,5 +481,9 @@ footer {
   }
   .contact-container {
     margin-top: 80px;
+  }
+  #numbers {
+    font-size: 1.6em;
+    padding-bottom: 10px;
   }
 }
