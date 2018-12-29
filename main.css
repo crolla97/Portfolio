@@ -357,7 +357,7 @@ footer {
 /* MEDIA QUERIES */
 
 /* iPads (portrait) ----------- */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
   h2 {
     font-size: 180px;
     line-height: 180px;
@@ -387,6 +387,7 @@ footer {
   }
   .top-stick {
     z-index: 100;
+    display: block;
     position: fixed;
     width: 100%;
     top: 0;
@@ -396,6 +397,7 @@ footer {
   }
   .bottom-stick {
     z-index: 100;
+    display: block;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -430,6 +432,9 @@ footer {
     z-index: -10;
   }
   /* ABOUT PAGE */
+  .intro-image {
+    height: 100vh
+  }
   #about {
     margin-top: 140vh;
   }
@@ -512,5 +517,355 @@ footer {
   }
   .box4 {
     background-color: green;
+  }
+}
+
+/*****************
+* Laptops
+********************/
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  h2 {
+    font-size: 180px;
+    line-height: 180px;
+  }
+  h3 {
+    font-size: 4em;
+  }
+  h4 {
+    font-size: 1.8em;
+  }
+  section {
+    padding: 30px;
+  }
+  section:first-child {
+    padding: 0;
+  }
+  .gutters {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+  }
+  .top-stick {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 40px;
+    background-color: white;
+  }
+  .bottom-stick {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    background-color: white;
+  }
+  /* INTRO PAGE */
+
+  #intro {
+    height: 110vh;
+    transition: .8s ease 0s;
+  }
+  .info {
+    top: 28%;
+    bottom: 0;
+    left: 150px;
+    font-weight: bold;
+  }
+  .right {
+    font-size: 2.4em;
+  }
+  .bottom {
+    font-size: 2em;
+  }
+  .top {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    z-index: -10;
+  }
+  /* ABOUT PAGE */
+  .intro-image {
+    height: 100vh
+  }
+  #about {
+    margin-top: 140vh;
+  }
+  .about-padding {
+    padding: 30px;
+  }
+  section .intro-text {
+    font-size: 2em;
+    padding-top: 30px;
+  }
+  #about-text {
+    font-size: 1em;
+    line-height: 2.1em;
+    letter-spacing: .03em;
+  }
+
+  /* SERVICES PAGE */
+  .card-container {
+    padding: 0 8% 0 8%;
+  }
+  .services-text {
+    padding-top: 10px;
+    font-size: 1em;
+  }
+  .subtext {
+    font-size: 1em;
+    padding-top: 20px;
+  }
+  .card {
+    flex-direction: row;
+  }
+  .card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .top-card {
+    height: 350px;
+  }
+  .bottom-card {
+    height: 350px;
+    background-color: white;
+  }
+  .container {
+    padding: 10px;
+  }
+  .icon-contact {
+    font-size: 4em;
+  }
+  .fab-contact {
+    padding-top: 50px
+  }
+  .contact-container {
+    margin-top: 80px;
+  }
+  #numbers {
+    font-size: 1.6em;
+    padding-bottom: 10px;
+  }
+
+  /* PROJECTS PAGE */
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8% 0 8%;
+  }
+  .box {
+    display: block;
+    width: 33%;
+  }
+  .box1 {
+    width: 66%;
+    background-color: red;
+  }
+  .box2 {
+    background-color: yellow;
+  }
+  .box3 {
+    background-color: blue;
+  }
+  .box4 {
+    background-color: green;
+  }
+}
+
+/************************
+* Desktops
+************************/
+
+@media only screen and (min-width: 1281px) {
+  h2 {
+    font-size: 180px;
+    line-height: 180px;
+    left: 70%;
+  }
+  h3 {
+    font-size: 4em;
+  }
+  h4 {
+    font-size: 1.8em;
+  }
+  section {
+    padding: 30px;
+  }
+  section:first-child {
+    padding: 0;
+  }
+  .gutters {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+  }
+  .top-stick {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 40px;
+    background-color: white;
+  }
+  .bottom-stick {
+    z-index: 100;
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    background-color: white;
+  }
+  /* INTRO PAGE */
+
+  #intro {
+    height: 110vh;
+    transition: .8s ease 0s;
+  }
+  .info {
+    top: 28%;
+    bottom: 0;
+    left: 150px;
+    font-weight: bold;
+  }
+  .right {
+    font-size: 2.4em;
+  }
+  .bottom {
+    font-size: 2em;
+  }
+  .top {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    z-index: -10;
+  }
+  /* ABOUT PAGE */
+  .intro-image {
+    height: 100vh
+  }
+  #about {
+    margin-top: 140vh;
+  }
+  .about-padding {
+    padding: 30px;
+  }
+  section .intro-text {
+    font-size: 2em;
+    padding-top: 30px;
+  }
+  #about-text {
+    font-size: 1em;
+    line-height: 2.1em;
+    letter-spacing: .03em;
+  }
+
+  /* SERVICES PAGE */
+  .card-container {
+    padding:0 40px 0 40px;
+  }
+  .services-text {
+    padding-top: 10px;
+    font-size: 1em;
+  }
+  .subtext {
+    font-size: 1em;
+    padding-top: 20px;
+  }
+  .card {
+    flex-direction: row;
+  }
+  .card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .top-card {
+    height: 300px;
+  }
+  .bottom-card {
+    height: 300px;
+    background-color: white;
+  }
+  .container {
+    padding: 10px;
+  }
+  .icon-contact {
+    font-size: 4em;
+  }
+  .fab-contact {
+    padding-top: 50px
+  }
+  .contact-container {
+    margin-top: 80px;
+  }
+  #numbers {
+    font-size: 1.6em;
+    padding-bottom: 10px;
+  }
+
+  /* PROJECTS PAGE */
+  .box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px 0 40px;
+  }
+  .box {
+    display: block;
+    width: 33%;
+  }
+  .box1 {
+    width: 66%;
+    background-color: red;
+  }
+  .box2 {
+    background-color: yellow;
+  }
+  .box3 {
+    background-color: blue;
+  }
+  .box4 {
+    background-color: green;
+  }
+}
+
+
+@media only screen and (max-height: 650px) {
+  h2 {
+    top: 10%;
+  }
+  .info {
+    top: 100px;
+  }
+  .top-stick,
+  .bottom-stick {
+    display: none;
   }
 }
