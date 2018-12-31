@@ -161,12 +161,26 @@ h4 {
 .scroll-down {
   position: absolute;
   top: 90%;
-  left: 50%;
+  left: 40%;
   transform: translate(-90%, -50%);
   text-align: center;
   margin: 0 auto;
   z-index: 50;
+  opacity: 0;
   display: block;
+  animation: fade-in-bottom ease .6s forwards 1.2s;
+}
+.scroll-down-left {
+  position: fixed;
+  top: 92%;
+  left: 6%;
+  transform: translate(-90%, -50%);
+  text-align: center;
+  margin: 0 auto;
+  z-index: 110;
+  display: none;
+  opacity: 0;
+  animation: fade-in-bottom ease .5s forwards 1.2s;
 }
 .scroll-down p {
   font-size: .8em;
@@ -174,7 +188,13 @@ h4 {
   font-family: 'Raleway', sans-serif;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
-
+}
+.scroll-down-left p {
+  font-size: .6em;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
 }
 .arrow a {
   text-decoration: none;
@@ -192,7 +212,7 @@ h4 {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(15px);
+    transform: translateY(12px);
   }
 }
 
@@ -335,7 +355,9 @@ footer {
 
 }
 
-/* ANIMATION KEYFRAMES */
+/*************************
+* ANIMATION KEYFRAMES
+**************************/
 
 @keyframes fade-in-right {
   from {
@@ -360,27 +382,18 @@ footer {
 @keyframes fade-in-bottom {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(25px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
     }
 }
-@keyframes fade-out-bottom {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
-
 
 /* MEDIA QUERIES */
+@media only screen and (max-width : 768px) {
 
+}
 /* iPads (portrait) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
   h2 {

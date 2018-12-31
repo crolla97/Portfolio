@@ -5,23 +5,46 @@ var right = document.querySelector('.right');
 var bottom = document.querySelector('.bottom');
 var fab = document.querySelector('.fab-contact');
 var arrow = document.querySelector('.scroll-down');
+var arrowLeft = document.querySelector('.scroll-down-left');
+var mq = window.matchMedia('@media only screen and (min-width : 768px)');
 
 window.onscroll = function() {
-  if (window.pageYOffset > 1 ) {
-    slider.style.width = '100%';
-    hello.style.left = '75%';
-    right.style.display = 'block';
-    bottom.style.display = 'block';
-    info.style.display = 'block';
-    fab.style.display = 'flex';
-    arrow.style.display = 'none';
+  if (window.screen.width >= 768) {
+    if (window.pageYOffset > 1 ) {
+      slider.style.width = '100%';
+      hello.style.left = '75%';
+      right.style.display = 'block';
+      bottom.style.display = 'block';
+      info.style.display = 'block';
+      fab.style.display = 'flex';
+      arrow.style.display = 'none';
+      arrowLeft.style.display = 'block';
+    } else {
+      slider.style.width = '50%';
+      hello.style.left = '58%';
+      info.style.display = 'none';
+      fab.style.display = 'none';
+      arrow.style.display = 'block';
+      arrowLeft.style.display = 'none';
+    }
   } else {
-    slider.style.width = '50%';
-    hello.style.left = '58%';
-    info.style.display = 'none';
-    fab.style.display = 'none';
-    arrow.style.display = 'block';
+    if (window.pageYOffset > 1 ) {
+      slider.style.width = '100%';
+      hello.style.left = '75%';
+      right.style.display = 'block';
+      bottom.style.display = 'block';
+      info.style.display = 'block';
+      fab.style.display = 'flex';
+      arrow.style.display = 'none';
+    } else {
+      slider.style.width = '50%';
+      hello.style.left = '58%';
+      info.style.display = 'none';
+      fab.style.display = 'none';
+      arrow.style.display = 'block';
+    }
   }
+
 };
 function navBtn(x) {
   p = document.getElementById('responsive_nav');
