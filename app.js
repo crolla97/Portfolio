@@ -6,7 +6,6 @@ var bottom = document.querySelector('.bottom');
 var fab = document.querySelector('.fab-contact');
 var arrow = document.querySelector('.scroll-down');
 var arrowLeft = document.querySelector('.scroll-down-left');
-var mq = window.matchMedia('@media only screen and (min-width : 768px)');
 
 window.onscroll = function() {
   if (window.screen.width >= 768) {
@@ -69,6 +68,12 @@ function navBtn(x) {
     opacity: 0,
     delay: 800
   };
+  var slideDown = {
+    distance: '150%',
+    origin: 'top',
+    opacity: 0,
+    delay: 1400
+  };
 
   ScrollReveal().reveal('.intro-text', slideLeft);
   ScrollReveal().reveal('.fab-contact', )
@@ -77,3 +82,4 @@ function navBtn(x) {
   ScrollReveal().reveal('.container', {
     delay: 1000
   });
+  ScrollReveal().reveal('.footer-text', slideDown);
