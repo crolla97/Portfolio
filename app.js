@@ -49,6 +49,7 @@ function navBtn(x) {
   p = document.getElementById('responsive_nav');
 
   x.classList.toggle("change");
+  x.classList.toggle(".side-menu:hover")
   if (p.style.width === "0%") {
     p.style.width = "85%";
   } else {

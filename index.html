@@ -11,7 +11,7 @@
   <title>Crolla Creations</title>
 </head>
 
-<body>
+<body class="hover-menu">
   <header>
     <div class="brgr" onclick="navBtn(this)" id="navbar-toggle">
       <div class="bar1"></div>
@@ -75,6 +75,14 @@
     </div>
   </div>
 
+  <a class="side-menu" onclick="navBtn(this)">
+    <i class="icon">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </i>
+    <p>MENU</p>
+  </a>
   <div class="top-stick"></div>
   <div class="bottom-stick"></div>
   <div class="scroll-down-left">
@@ -87,7 +95,7 @@
   <main>
     <section id="about">
       <div class="intro-image"></div>
-      <div class="gutters about-padding">
+      <div class="gutters padding">
         <span class="intro-text" id="about-intro">INTRODUCION</span>
         <h3 id="about-me">Make anything.</h3>
         <p id="about-text">I am a proud to say that I am a self taught Front-End Developer based in Edinburgh, Scotland. Coding started out as a hobby the summer before I began my studies for civil engineering at University but once at University I
@@ -95,12 +103,12 @@
           learner and concept of writing a few lines of code only for the output to appear on my screen seconds later brought instant gratification and excitement. I took learning into my own hands all whist maintaining a full time job and now have
           reached the
           point in my learing where I want to put my services out there.</p>
-        <div class="line"></div>
+        <div class="break"></div>
       </div>
     </section>
 
     <section id="services">
-      <div class="gutters">
+      <div class="gutters padding">
         <p class="intro-text" id="services-intro">SERVICES</p>
         <h3 id="services-header">What I can do.</h3>
       </div>
@@ -147,12 +155,11 @@
           </div>
         </div>
       </div>
-      <div class="line"></div>
 
     </section>
 
     <section id="projects">
-      <div class="gutters">
+      <div class="gutters padding">
         <p class="intro-text">PROJECTS</p>
         <h3>What I have made.</h3>
       </div>
