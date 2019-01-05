@@ -6,7 +6,6 @@ var bottom = document.querySelector('.bottom');
 var fab = document.querySelector('.fab-contact');
 var arrow = document.querySelector('.scroll-down');
 var arrowLeft = document.querySelector('.scroll-down-left');
-
 window.onscroll = function() {
   if (window.screen.width >= 768) {
     if (window.pageYOffset > 1 ) {
@@ -47,13 +46,15 @@ window.onscroll = function() {
 };
 function navBtn(x) {
   p = document.getElementById('responsive_nav');
-
+  q = document.querySelector('.side-text');
   x.classList.toggle("change");
-  x.classList.toggle(".side-menu:hover")
+  
   if (p.style.width === "0%") {
     p.style.width = "85%";
+    q.style.display = 'none';
   } else {
     p.style.width = "0%";
+    q.style.display ='block';
   }
 };
 
