@@ -82,7 +82,9 @@ h4 {
   display: inline-block;
   padding: 10px;
 }
-
+.side-text {
+  display: none;
+}
 .brgr {
   background-color: white;
   padding: 8px;
@@ -124,24 +126,26 @@ h4 {
   transform: rotate(45deg) translate(-6px, -5px);
 }
 
-.change .line:nth-child(1) {
+.change2 .line:nth-child(1) {
   width: 25px;
   -webkit-transform: rotate(-45deg) translate(-4px, 4px);
   transform: rotate(-45deg) translate(-4px, 4px);
 }
 
 /* Fade out the second bar */
-.change .line:nth-child(2) {
+.change2 .line:nth-child(2) {
   opacity: 0;
 }
 
 /* Rotate last bar */
-.change .line:nth-child(3) {
+.change2 .line:nth-child(3) {
   width: 25px;
   -webkit-transform: rotate(45deg) translate(-4px, -4px);
   transform: rotate(45deg) translate(-4px, -4px);
 }
-
+.brief-menu {
+  display: none;
+}
 /* INTRO PAGE */
 .top {
   overflow: hidden;
@@ -377,12 +381,13 @@ section:first-child {
   left: 0;
   background-color: grey;
   z-index: 10;
-  opacity: 0;
-  animation: slideout-bottom ease-out .3s forwards
+  opacity: 1;
+  transition: 0.6s ease-in;
+  transform: translateY(600px) skew(0deg, 15deg);
 }
 
 .box:hover .overlay-project {
-  animation: slidein-bottom ease-out .4s forwards;
+  transform: translateY(0) skew(0deg, 0deg);
 }
 
 .img4,
@@ -454,13 +459,14 @@ footer img {
   position: relative;
   background-color: none;
   z-index: 15;
+  transition: 0.7s ease;
 }
 
 .bg {
   background-color: none;
 }
 
-.footer-text:hover .bg {
+.footer-text:hover {
   background-color: #e2f4f4;
 }
 
@@ -474,32 +480,6 @@ footer img {
 
   50% {
     transform: translateY(12px);
-  }
-}
-
-@keyframes slidein-bottom {
-  from {
-    opacity: 1;
-    transform: translateY(600px) skew(0deg, 15deg);
-  }
-
-  to {
-    opacity: 1;
-    display: block;
-    transform: translateY(0) skew(0deg, 0deg);
-  }
-}
-
-@keyframes slideout-bottom {
-  from {
-    opacity: 1;
-    transform: translateY(0) skew(0deg, 0deg);
-  }
-
-  to {
-    opacity: 1;
-    display: none;
-    transform: translateY(600px) skew(0deg, 15deg);
   }
 }
 
@@ -607,11 +587,28 @@ footer img {
   }
 
   .overlay_content {
-    left: 100px;
+    left: 80px;
+    top: 28%;
   }
-
+  .overlay-menu a {
+    padding: 10px;
+  }
   .overlay-menu .fab-menu {
-    left: 100px;
+    left: 80px;
+    top: 32%;
+  }
+  .overlay-menu .fab-menu {
+    font-size: 0.7em;
+  }
+  .brief-menu {
+    position: relative;
+    top: 50%;
+    display: flex;
+    flex-direction: row;
+    left: 80px;
+  }
+  .brief-menu img {
+    width: 50px;
   }
 
   /* SLIDE MENU FOR LARGE SCREENS */
@@ -657,17 +654,17 @@ footer img {
   }
 
   .side-menu:hover .line:nth-child(1) {
-    width: 24px;
+    width: 25px;
     transition: 0.5s ease;
   }
 
   .side-menu:hover .line:nth-child(2) {
-    width: 34px;
+    width: 35px;
     transition: 0.5s ease;
   }
 
   .side-menu:hover .line:nth-child(3) {
-    width: 24px;
+    width: 25px;
     transition: 0.5s ease;
   }
 
@@ -678,6 +675,9 @@ footer img {
     font-family: sans-serif;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
+  }
+  .side-text {
+    display: block;
   }
 
   /* INTRO PAGE */
@@ -803,11 +803,11 @@ footer img {
   }
 
   .overlay-project {
-    animation: slideout-bottom ease-out .6s forwards;
+    transition: 0.8s ease;
   }
 
   .box:hover .overlay-project {
-    animation: slidein-bottom ease-out .7s forwards;
+    transition: 0.8s ease;
   }
 
   /* Footer */
@@ -888,6 +888,17 @@ footer img {
     left: 0;
     height: 40px;
     background-color: white;
+  }
+  .brgr {
+    display: none;
+  }
+
+  .overlay_content {
+    left: 100px;
+  }
+
+  .overlay-menu .fab-menu {
+    left: 100px;
   }
 
   /* SLIDE MENU FOR LARGE SCREENS */
@@ -1063,11 +1074,11 @@ footer img {
   }
 
   .overlay-project {
-    animation: slideout-bottom ease-out .6s forwards
+    transition: 0.8s ease;
   }
 
   .box:hover .overlay-project {
-    animation: slidein-bottom ease-out .7s forwards;
+    transition: 0.8s ease;
   }
 
   /* CONTACT CONTAINER */
@@ -1159,6 +1170,17 @@ footer img {
     left: 0;
     height: 40px;
     background-color: white;
+  }
+  .brgr {
+    display: none;
+  }
+
+  .overlay_content {
+    left: 100px;
+  }
+
+  .overlay-menu .fab-menu {
+    left: 100px;
   }
 
   /* SLIDE MENU FOR LARGE SCREENS */
@@ -1351,11 +1373,11 @@ footer img {
   }
 
   .overlay-project {
-    animation: slideout-bottom ease-out .6s forwards
+    transition: 0.8s ease;
   }
 
   .box:hover .overlay-project {
-    animation: slidein-bottom ease-out .7s forwards;
+    transition: 0.8s ease;
   }
 
   /* Footer */

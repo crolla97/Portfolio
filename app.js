@@ -48,7 +48,19 @@ function navBtn(x) {
   p = document.getElementById('responsive_nav');
   q = document.querySelector('.side-text');
   x.classList.toggle("change");
-  
+
+  if (p.style.width === "0%") {
+    p.style.width = "85%";
+  } else {
+    p.style.width = "0%";
+  }
+};
+
+function sideBtn(x) {
+  p = document.getElementById('responsive_nav');
+  q = document.querySelector('.side-text');
+  x.classList.toggle("change2");
+
   if (p.style.width === "0%") {
     p.style.width = "85%";
     q.style.display = 'none';
@@ -57,6 +69,8 @@ function navBtn(x) {
     q.style.display ='block';
   }
 };
+
+
 
   var slideUp = {
     distance: '150%',
