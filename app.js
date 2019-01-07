@@ -3,7 +3,6 @@ var hello = document.querySelector('h2');
 var info = document.querySelector('.info');
 var right = document.querySelector('.right');
 var bottom = document.querySelector('.bottom');
-var fab = document.querySelector('.fab-contact');
 var arrow = document.querySelector('.scroll-down');
 var arrowLeft = document.querySelector('.scroll-down-left');
 window.onscroll = function() {
@@ -14,14 +13,12 @@ window.onscroll = function() {
       right.style.display = 'block';
       bottom.style.display = 'block';
       info.style.display = 'block';
-      fab.style.display = 'flex';
       arrow.style.display = 'none';
       arrowLeft.style.display = 'block';
     } else {
       slider.style.width = '50%';
       hello.style.left = '58%';
       info.style.display = 'none';
-      fab.style.display = 'none';
       arrow.style.display = 'block';
       arrowLeft.style.display = 'none';
     }
@@ -32,13 +29,11 @@ window.onscroll = function() {
       right.style.display = 'block';
       bottom.style.display = 'block';
       info.style.display = 'block';
-      fab.style.display = 'flex';
       arrow.style.display = 'none';
     } else {
       slider.style.width = '50%';
       hello.style.left = '58%';
       info.style.display = 'none';
-      fab.style.display = 'none';
       arrow.style.display = 'block';
     }
   }

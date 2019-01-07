@@ -184,25 +184,6 @@ h4 {
   animation: fade-in-bottom ease-in .4s forwards 1s;
 }
 
-.fab-contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  opacity: 0;
-  display: none;
-  animation: fade-in-bottom ease-in .4s forwards 1s;
-}
-
-.icon-contact {
-  font-size: 2em;
-  padding: 5px;
-  color: black;
-}
-
-.icon-wrapper {
-  cursor: pointer;
-}
-
 .scroll-down {
   position: absolute;
   top: 90%;
@@ -407,7 +388,6 @@ section:first-child {
   font-weight: bold;
 }
 
-/* CONTACT PAGE */
 /* FOOTER */
 footer {
   position: relative;
@@ -453,8 +433,8 @@ footer img {
 }
 
 .footer-text {
-  height: 81px;
-  width: 158px;
+  height: auto;
+  width: auto;
   padding: 20px;
   position: relative;
   background-color: none;
@@ -462,12 +442,32 @@ footer img {
   transition: 0.7s ease;
 }
 
-.bg {
-  background-color: none;
-}
-
 .footer-text:hover {
   background-color: #e2f4f4;
+}
+.contact-container{
+  top: 40%;
+  right: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-40%);
+}
+.fab-contact {
+  display: flex;
+  flex-direction: row;
+}
+.icon-contact {
+  font-size: 1.3em;
+  padding: 0 5px 0 5px;
+  color: black;
+}
+.icon-wrapper {
+  cursor: pointer;
+}
+.contact-container p {
+  font-style: italic;
+  font-size: .8em
 }
 
 /*************************
@@ -598,7 +598,7 @@ footer img {
     top: 32%;
   }
   .overlay-menu .fab-menu {
-    font-size: 0.7em;
+    font-size: 2.5em;
   }
   .brief-menu {
     position: relative;
@@ -773,19 +773,6 @@ footer img {
   .container {
     padding: 10px;
   }
-
-  .icon-contact {
-    font-size: 4em;
-  }
-
-  .fab-contact {
-    padding-top: 50px
-  }
-
-  .form-container {
-    margin-top: 80px;
-  }
-
   #numbers {
     font-size: 1.6em;
     padding-bottom: 10px;
@@ -803,33 +790,36 @@ footer img {
   }
 
   .overlay-project {
-    transition: 0.8s ease;
+    transition: 0.8s ease-in;
   }
 
   .box:hover .overlay-project {
-    transition: 0.8s ease;
+    transition: 0.8s ease-out;
   }
 
   /* Footer */
+  footer {
+    height: 280px;
+  }
   .footer-bottom {
     bottom: 20%;
     font-size: 1em;
   }
-
   footer img {
     display: block;
     width: 50px;
     margin: 10px 10px 0 0;
   }
-
   .footer-container {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-
   .brief a {
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+  .icon-contact {
+    font-size: 2em;
   }
 }
 
@@ -966,6 +956,9 @@ footer img {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
   }
+  .side-text {
+    display: block;
+  }
 
   /* INTRO PAGE */
   #intro {
@@ -1074,29 +1067,18 @@ footer img {
   }
 
   .overlay-project {
-    transition: 0.8s ease;
+    transition: 0.8s ease-in;
   }
 
   .box:hover .overlay-project {
-    transition: 0.8s ease;
+    transition: 0.8s ease-out;
   }
 
-  /* CONTACT CONTAINER */
-  .contact-container {}
-
-  .icon-contact {
-    font-size: 4em;
-  }
-
-  .fab-contact {
-    padding-top: 50px
-  }
-
-  .form-container {
-    margin-top: 80px;
-  }
 
   /* Footer */
+  footer {
+    height: 350px;
+  }
   .footer-bottom {
     bottom: 20%;
     font-size: 1em;
@@ -1115,7 +1097,10 @@ footer img {
   }
 
   .brief a {
-    font-size: 1.7em;
+    font-size: 3em;
+  }
+  .icon-contact {
+    font-size: 3em;
   }
 }
 
@@ -1248,6 +1233,9 @@ footer img {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
   }
+  .side-text {
+    display: block;
+  }
 
 
   /* INTRO PAGE */
@@ -1301,61 +1289,39 @@ footer img {
     font-size: 2em;
     padding-top: 30px;
   }
-
   #about-text {
     font-size: 1em;
     line-height: 2.1em;
     letter-spacing: .03em;
   }
-
   /* SERVICES PAGE */
   .card-container {
     padding: 0 40px 0 40px;
   }
-
   .services-text {
     padding-top: 10px;
     font-size: 1em;
   }
-
   .subtext {
     font-size: 1em;
     padding-top: 20px;
   }
-
   .card {
     flex-direction: row;
   }
-
   .card:nth-child(2) {
     flex-direction: row-reverse;
   }
-
   .top-card {
     height: 300px;
   }
-
   .bottom-card {
     height: 300px;
     background-color: white;
   }
-
   .container {
     padding: 10px;
   }
-
-  .icon-contact {
-    font-size: 4em;
-  }
-
-  .fab-contact {
-    padding-top: 50px
-  }
-
-  .form-container {
-    margin-top: 80px;
-  }
-
   #numbers {
     font-size: 1.6em;
     padding-bottom: 10px;
@@ -1373,21 +1339,38 @@ footer img {
   }
 
   .overlay-project {
-    transition: 0.8s ease;
+    transition: 0.8s ease-in;
   }
 
   .box:hover .overlay-project {
-    transition: 0.8s ease;
+    transition: 0.8s ease-out;
   }
 
   /* Footer */
-  .footer-text {
-    bottom: 10%;
-    top: none;
+  footer {
+    height: 350px;
+  }
+  .footer-bottom {
+    bottom: 20%;
+    font-size: 1em;
   }
 
   footer img {
     display: block;
+    width: 70px;
+    margin: 10px 50px 0 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .brief a {
+    font-size: 3em;
+  }
+  .icon-contact {
+    font-size: 3em;
   }
 }
 
