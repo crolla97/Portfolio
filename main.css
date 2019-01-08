@@ -47,7 +47,7 @@ h4 {
   height: 100%;
   background-color: white;
   overflow: hidden;
-  z-index: 100;
+  z-index: 200;
   transition: 0.3s ease;
 }
 
@@ -73,11 +73,11 @@ h4 {
 
 .overlay-menu .fab-menu {
   position: relative;
-  top: 10%;
+  top: 15%;
   left: 10px;
   display: flex;
   flex-direction: row;
-  font-size: .9em;
+  font-size: 2em;
 }
 
 .overlay-menu .fab-menu i {
@@ -100,30 +100,38 @@ h4 {
   z-index: 200;
 }
 
-.bar1,
-.bar2,
-.bar3 {
+.bar {
   height: 3px;
-  width: 25px;
   background-color: black;
   margin: 3px 0;
   border-radius: 5px;
   transition: 0.3s
 }
+.bar:nth-child(1) {
+  width: 16px;
+}
+.bar:nth-child(2) {
+  width: 20px;
+}
+.bar:nth-child(3) {
+  width: 12px;
+}
 
 /* Rotate first bar */
-.change .bar1 {
+.change .bar:nth-child(1) {
+  width: 25px;
   -webkit-transform: rotate(-45deg) translate(-4px, 3px);
   transform: rotate(-45deg) translate(-4px, 3px);
 }
 
 /* Fade out the second bar */
-.change .bar2 {
+.change .bar:nth-child(2) {
   opacity: 0;
 }
 
 /* Rotate last bar */
-.change .bar3 {
+.change .bar:nth-child(3) {
+  width: 25px;
   -webkit-transform: rotate(45deg) translate(-6px, -5px);
   transform: rotate(45deg) translate(-6px, -5px);
 }
@@ -189,12 +197,12 @@ h4 {
 
 .scroll-down {
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 40%;
   transform: translate(-90%, -50%);
   text-align: center;
   margin: 0 auto;
-  z-index: 50;
+  z-index: 110;
   opacity: 0;
   display: block;
   animation: fade-in-bottom ease .6s forwards 1.2s;
