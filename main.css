@@ -14,8 +14,10 @@ h2 {
   font-size: 100px;
   line-height: 80px;
   top: 25%;
-  left: 58%;
+  left: 50%;
+  transform: translateX(-50%);
   transition: 1s ease 0s;
+  z-index: 80;
 }
 
 h3 {
@@ -150,6 +152,7 @@ h4 {
 .top {
   overflow: hidden;
   background-color: #F8F8F8;
+  position: relative;
 }
 
 #intro {
@@ -830,7 +833,6 @@ footer img {
   h2 {
     font-size: 180px;
     line-height: 180px;
-    left: 70%;
   }
 
   h3 {
@@ -1111,7 +1113,6 @@ footer img {
   h2 {
     font-size: 180px;
     line-height: 180px;
-    left: 70%;
   }
 
   h3 {

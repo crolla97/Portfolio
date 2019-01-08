@@ -9,7 +9,7 @@ window.onscroll = function() {
   if (window.screen.width >= 768) {
     if (window.pageYOffset > 1 ) {
       slider.style.width = '100%';
-      hello.style.left = '75%';
+      hello.style.left = '100%';
       right.style.display = 'block';
       bottom.style.display = 'block';
       info.style.display = 'block';
@@ -17,7 +17,7 @@ window.onscroll = function() {
       arrowLeft.style.display = 'block';
     } else {
       slider.style.width = '50%';
-      hello.style.left = '58%';
+      hello.style.left = '50%';
       info.style.display = 'none';
       arrow.style.display = 'block';
       arrowLeft.style.display = 'none';
@@ -25,14 +25,14 @@ window.onscroll = function() {
   } else {
     if (window.pageYOffset > 1 ) {
       slider.style.width = '100%';
-      hello.style.left = '75%';
+      hello.style.left = '100%';
       right.style.display = 'block';
       bottom.style.display = 'block';
       info.style.display = 'block';
       arrow.style.display = 'none';
     } else {
       slider.style.width = '50%';
-      hello.style.left = '58%';
+      hello.style.left = '50%';
       info.style.display = 'none';
       arrow.style.display = 'block';
     }
