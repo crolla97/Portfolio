@@ -16,7 +16,7 @@ h2 {
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
-  transition: 1s ease 0s;
+  transition: 1s ease-in;
   z-index: 80;
 }
 
@@ -168,7 +168,7 @@ h4 {
   position: relative;
   width: 50%;
   background-color: #F0B50B;
-  transition: 1.2s ease 0s;
+  transition: .8s cubic-bezier(1, 0.12, 0.58, 0.89) 0s;
   z-index: 10;
 }
 
@@ -252,7 +252,7 @@ h4 {
 /* ABOUT PAGE */
 .intro-image {
   width: 100%;
-  background-image: url("images/intro-pic.jpg");
+  background-image: url("https://raw.githubusercontent.com/crolla97/Portfolio/master/images/intro-pic.jpg");
   background-size: cover;
   background-position: center;
   display: block;
@@ -630,7 +630,7 @@ footer img {
     top: 50%;
     transform: translateY(-50%);
     left: 28px;
-    z-index: 110;
+    z-index: 200;
     cursor: pointer;
     transition: 0.5s ease;
   }
@@ -693,12 +693,12 @@ footer img {
 
   /* INTRO PAGE */
   #intro {
-    height: 110vh;
-    transition: .8s ease 0s;
+    height: 130vh;
+    transition: 0.9s cubic-bezier(0.68, -0.01, 0.68, 0.29) 0s
   }
 
   .info {
-    top: 28%;
+    top: 25%;
     bottom: 0;
     left: 150px;
     font-weight: bold;
@@ -731,7 +731,7 @@ footer img {
   }
 
   #about {
-    margin-top: 140vh;
+    margin-top: 200vh;
   }
 
   .padding {
@@ -909,7 +909,7 @@ footer img {
     top: 50%;
     transform: translateY(-50%);
     left: 28px;
-    z-index: 110;
+    z-index: 200;
     cursor: pointer;
     transition: 0.5s ease;
   }
@@ -972,7 +972,7 @@ footer img {
 
   /* INTRO PAGE */
   #intro {
-    height: 110vh;
+    height: 130vh;
     transition: .8s ease 0s;
   }
 
@@ -1010,7 +1010,7 @@ footer img {
   }
 
   #about {
-    margin-top: 140vh;
+    margin-top: 200vh;
   }
 
   section .intro-text {
@@ -1249,7 +1249,7 @@ footer img {
 
   /* INTRO PAGE */
   #intro {
-    height: 110vh;
+    height: 130vh;
     transition: .8s ease 0s;
   }
 
@@ -1287,7 +1287,7 @@ footer img {
   }
 
   #about {
-    margin-top: 140vh;
+    margin-top: 200vh;
   }
 
   .padding {
